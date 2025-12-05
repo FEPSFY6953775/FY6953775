@@ -1,157 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ENG0018 Conference Paper</title>
-  
-  <!-- Styles -->
-  <style>
-    body {
-      background-color: #FFFFFF;
-      margin-left: 50px;
-      font-family: Arial, sans-serif;
-    }
-    table {
-      font-family: Calibri, sans-serif;
-      border-collapse: collapse;
-      width: 30%;
-    }
-    td, th {
-      border: 1px solid #4AC1FF;
-      text-align: left;
-      padding: 8px;
-    }
-    tr:nth-child(even) {
-      background-color: #94DBFF;
-    }
-    p.ex1 {
-      margin-left: 250px;
-    }
-    .mySlides {
-      display: none;
-    }
-    .engine-image {
-      max-width: 600px;
-      height: auto;
-      margin: 20px 0;
-      display: block;
-    }
-    .image-caption {
-      font-style: italic;
-      color: #666;
-      margin-top: 5px;
-      margin-bottom: 20px;
-    }
-    #wordCount {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      background-color: #4AC1FF;
-      padding: 10px 15px;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-  </style>
-  
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body id="mainBody">
-  
-  <img src="WebBanner2023.png" alt="Banner" width="1200" height="300">
-  <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
-  <h2>Student URN: 6953775</h2>
-  
-  <h2><b>Conference paper: Rotary Vane Engines</b></h2>
-  
-  <p class="ex1">
-    <pre>
-Rotary vane engines represent an innovative approach to mechanical power generation and fluid compression. This paper explores their operating principles, applications, and recent developments in the field.
-    </pre>
+<section id="rotary-vane-ic-engine">
+  <p>
+    Rotary vane internal combustion engines are a promising but still experimental alternative to conventional piston engines for cars, offering potential benefits in compactness, smoothness, and efficiency but facing significant engineering challenges in sealing, durability, emissions, and commercialization. Current research and patents show that while rotary vane concepts can in principle replace piston engines in some automotive roles, further development and validation are needed before they become practical replacements in mass‑market vehicles.<sup>[1][2][3][4]</sup>
   </p>
-  
-  <table>
-    <tr>
-      <th><h3>Table of contents</h3></th>
-    </tr>
-    <tr>
-      <td><a href="#abstract">Abstract</a></td>
-    </tr>
-    <tr>
-      <td><a href="#introduction">Introduction</a></td>
-    </tr>
-    <tr>
-      <td><a href="#operating-principles">Operating Principles</a></td>
-    </tr>
-    <tr>
-      <td><a href="#applications">Applications</a></td>
-    </tr>
-    <tr>
-      <td><a href="#recent-developments">Recent Developments</a></td>
-    </tr>
-    <tr>
-      <td><a href="#references">References</a></td>
-    </tr>
-  </table>
-  
-  <h3 id="abstract">Abstract</h3>
-  <p class="ex1">
-    Rotary vane engines are a class of positive displacement machines that utilize rotating vanes to compress fluids or generate mechanical power. This paper examines the fundamental mechanisms, industrial applications, and emerging technologies in rotary vane engine design.
+
+  <h2>Introduction</h2>
+  <p>
+    Conventional automotive powertrains are dominated by four‑stroke reciprocating piston engines, which convert chemical energy in fuel into mechanical work through repetitive up‑and‑down motion of pistons linked to a crankshaft. This mechanism is mature and robust but involves many moving parts, friction losses in the slider‑crank and valvetrain, and vibration due to reciprocating masses. Rotary vane engines attempt to address these limitations by using rotating vanes in a cylindrical housing to generate torque directly, removing the slider‑crank mechanism and potentially simplifying the engine.<sup>[3][5][6][1]</sup>
   </p>
-  
-  <h3 id="introduction">Introduction</h3>
-  <p class="ex1">
-    Rotary vane technology has been employed in various mechanical systems for over a century. These engines offer unique advantages including compact size, smooth operation, and versatility in both compression and expansion applications.
+
+  <h2>Operating principle of rotary vane engines</h2>
+  <p>
+    A rotary vane internal combustion engine typically consists of a circular or cylindrical housing, a rotor carrying multiple sliding vanes, and ports for intake and exhaust. As the rotor turns, the vanes slide radially to maintain contact with the housing, forming variable‑volume chambers where the four thermodynamic strokes—intake, compression, combustion/expansion and exhaust—occur in sequence around the circumference. Because several chambers can be in different phases simultaneously, multiple combustion events per revolution are possible, giving a high frequency of power strokes relative to shaft speed.<sup>[2][7][8][1]</sup>
   </p>
-  
-  <h3 id="operating-principles">Operating Principles</h3>
-  <p class="ex1">
-    The rotary vane engine operates through a rotor mounted eccentrically within a cylindrical housing. Vanes slide in and out of slots in the rotor, maintaining contact with the housing wall through centrifugal force or spring pressure. As the rotor turns, the volume between consecutive vanes changes, creating compression or expansion cycles.
+  <p>
+    One patented rotary vane engine design claims that with two vanes per rotor, four working cycles per revolution are achieved, making it equivalent in indicated cycles to an eight‑piston four‑stroke engine of similar displacement. Other concepts use four intersecting vanes or multiple rotors to further increase the number of expansion events per revolution, aiming for higher specific power and smoother torque delivery. These architectures share the common feature that all principal moving elements rotate about fixed axes, which can reduce vibration compared with reciprocating pistons.<sup>[5][8][9][1][2][3]</sup>
   </p>
-  
-  <!-- Image 1: Basic Rotary Vane Engine Diagram -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Rotary_vane_vacuum_pump.svg/640px-Rotary_vane_vacuum_pump.svg.png" alt="Diagram showing the basic operation of a rotary vane vacuum pump with labeled components including rotor, vanes, and housing" class="engine-image">
-  <p class="image-caption">Figure 1: Schematic diagram of a rotary vane vacuum pump showing key components (Source: Wikimedia Commons, Public Domain)</p>
-  
-  <p class="ex1">
-    The eccentric mounting creates chambers of varying volume between the vanes. As the rotor rotates, these chambers increase in volume on the intake side and decrease on the discharge side, facilitating fluid compression or expansion.
+
+  <h2>Claimed advantages over piston engines</h2>
+  <p>
+    Proponents of rotary vane engines cite several theoretical and experimental advantages compared with conventional automotive piston engines.
   </p>
-  
-  <h3 id="applications">Applications</h3>
-  <p class="ex1">
-    Rotary vane engines find applications in numerous industrial and commercial sectors. Common uses include vacuum pumps, air compressors, hydraulic motors, and refrigeration systems. Their ability to handle both liquid and gaseous fluids makes them particularly versatile.
+  <ul>
+    <li>
+      <strong>Power density and compactness:</strong> The high number of combustion events per revolution, combined with a compact circular housing, can yield high power‑to‑weight and power‑to‑volume ratios for a given displacement. This is attractive for applications where packaging space is limited, such as sports cars, drones or hybrid range extenders.<sup>[4][7][1][2]</sup>
+    </li>
+    <li>
+      <strong>Mechanical simplicity and friction reduction:</strong> The absence of a slider‑crank mechanism, connecting rods, and a conventional valvetrain reduces part count and can lower mechanical and pumping losses, potentially increasing brake thermal efficiency. Fewer parts also imply lower manufacturing and maintenance costs at scale, although this remains to be proven in mass production.<sup>[2][3][5]</sup>
+    </li>
+    <li>
+      <strong>Smoothness and NVH:</strong> Because the main moving components rotate continuously and are better balanced, rotary vane engines can exhibit low vibration and noise levels, sometimes compared qualitatively to an electric motor. This improved refinement is desirable in passenger car applications, where vibration and harshness are key design constraints.<sup>[7][3]</sup>
+    </li>
+  </ul>
+  <p>
+    Some rotary vane concepts also emphasize flexible operation on different fuels (e.g. gasoline, LPG, natural gas) and the possibility of integrating with pneumatic or thermodynamic systems. A hybrid pneumatic‑combustion rotary vane engine has been demonstrated where the machine can operate both as an internal combustion engine and as a compressed‑air motor, suggesting potential synergy with energy recovery or gas‑distribution infrastructure.<sup>[10][4]</sup>
   </p>
-  
-  <!-- Image 2: Industrial Rotary Vane Compressor -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Rotary_vane_compressor.jpg/640px-Rotary_vane_compressor.jpg" alt="Industrial rotary vane air compressor unit used in manufacturing applications" class="engine-image">
-  <p class="image-caption">Figure 2: Industrial rotary vane air compressor commonly used in manufacturing (Source: Wikimedia Commons, CC BY-SA 3.0)</p>
-  
-  <p class="ex1">
-    In automotive applications, rotary vane compressors are used in air conditioning systems and superchargers. The aerospace industry employs them in hydraulic systems and environmental control systems. Medical applications include vacuum-assisted surgical equipment and laboratory vacuum systems.
+
+  <h2>Limitations and engineering challenges</h2>
+  <p>
+    Despite these potential benefits, several technical challenges currently limit the use of rotary vane engines as direct replacements for piston engines in cars.
   </p>
-  
-  <h3 id="recent-developments">Recent Developments</h3>
-  <p class="ex1">
-    Recent advances in materials science and manufacturing technology have enabled improvements in rotary vane engine efficiency and durability. Carbon fiber reinforced polymer vanes offer reduced friction and increased wear resistance compared to traditional metal vanes. Computer-aided design and precision manufacturing techniques allow for tighter tolerances and improved sealing.
+  <ul>
+    <li>
+      <strong>Sealing and wear:</strong> Maintaining tight seals between vane tips and the housing, and between adjacent chambers, under high temperature and pressure is difficult. Poor sealing causes blow‑by, loss of efficiency, and increased emissions, while high contact loads on the vanes can accelerate wear. Ensuring adequate lubrication without excessive oil consumption is also challenging, as seen historically with other rotary engines.<sup>[11][6][2]</sup>
+    </li>
+    <li>
+      <strong>Thermal management and materials:</strong> Vane tips and housing surfaces are exposed continuously to hot combustion gases, creating non‑uniform thermal loads and potential distortion of components. Thermal expansion can degrade clearances and sealing, demanding tight machining tolerances and advanced materials or coatings, which increase cost and manufacturing complexity.<sup>[8][9][2]</sup>
+    </li>
+    <li>
+      <strong>Combustion control and emissions:</strong> Achieving homogeneous combustion, stable ignition, and low emissions across the full speed–load range of an automotive drive cycle is non‑trivial in the constrained geometry of vane chambers. Experimental rotary vane prototypes have reported issues such as misfiring and cold‑start problems, especially when optimized for gaseous fuels. Meeting modern automotive emission regulations would require sophisticated fuel injection, ignition control, and exhaust after‑treatment systems comparable to those used on advanced piston engines.<sup>[12][4][2]</sup>
+    </li>
+  </ul>
+  <p>
+    In addition, rotary vane engines lack the long production history and optimization effort invested in piston engines, so their actual real‑world reliability, durability, and cost in automotive service remain largely unproven. Automotive manufacturers are conservative in adopting entirely new engine architectures because of the high cost of validation and the simultaneous shift of investment toward electrified powertrains.<sup>[6][3][12]</sup>
   </p>
-  
-  <!-- Image 3: Modern Rotary Vane Pump Cutaway -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Vane-pump.jpg/640px-Vane-pump.jpg" alt="Cutaway view of a modern rotary vane pump showing internal vane mechanism and rotor assembly" class="engine-image">
-  <p class="image-caption">Figure 3: Cutaway view of a modern rotary vane pump showing internal mechanisms (Source: Wikimedia Commons, CC BY-SA 4.0)</p>
-  
-  <p class="ex1">
-    Computational fluid dynamics simulations now guide the optimization of vane geometry and housing profiles to minimize energy losses. Variable displacement designs allow for improved efficiency across a wider operating range. Environmental concerns have driven development of oil-free rotary vane compressors for applications requiring contaminant-free compressed air.
-  </p>
-  
-  <h3 id="references">References</h3>
-  <p class="ex1">
-    [1] Smith, J. (2023). Positive Displacement Machines: Theory and Applications. Engineering Press.<br>
-    [2] Johnson, A. & Williams, B. (2024). Modern Rotary Vane Technology. Journal of Mechanical Engineering, 45(3), 234-256.<br>
-    [3] Chen, L. (2024). Advances in Rotary Compressor Design. International Journal of Fluid Machinery, 12(2), 89-104.
-  </p>
-  
+
+  <h2>Current state and automotive potential</h2
+
   <!-- Word Count Display -->
   <div id="wordCount">Word Count: <span id="count">0</span></div>
   
