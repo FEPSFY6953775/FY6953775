@@ -1,110 +1,120 @@
 <!DOCTYPE html>
-<section id="rotary-vane-ic-engine">
-  <p>
-    Rotary vane internal combustion engines are a promising but still experimental alternative to conventional piston engines for cars, offering potential benefits in compactness, smoothness, and efficiency but facing significant engineering challenges in sealing, durability, emissions, and commercialization. Current research and patents show that while rotary vane concepts can in principle replace piston engines in some automotive roles, further development and validation are needed before they become practical replacements in mass‑market vehicles.<sup>[1][2][3][4]</sup>
-  </p>
-
-  <h2>Introduction</h2>
-  <p>
-    Conventional automotive powertrains are dominated by four‑stroke reciprocating piston engines, which convert chemical energy in fuel into mechanical work through repetitive up‑and‑down motion of pistons linked to a crankshaft. This mechanism is mature and robust but involves many moving parts, friction losses in the slider‑crank and valvetrain, and vibration due to reciprocating masses. Rotary vane engines attempt to address these limitations by using rotating vanes in a cylindrical housing to generate torque directly, removing the slider‑crank mechanism and potentially simplifying the engine.<sup>[3][5][6][1]</sup>
-  </p>
-
-  <h2>Operating principle of rotary vane engines</h2>
-  <p>
-    A rotary vane internal combustion engine typically consists of a circular or cylindrical housing, a rotor carrying multiple sliding vanes, and ports for intake and exhaust. As the rotor turns, the vanes slide radially to maintain contact with the housing, forming variable‑volume chambers where the four thermodynamic strokes—intake, compression, combustion/expansion and exhaust—occur in sequence around the circumference. Because several chambers can be in different phases simultaneously, multiple combustion events per revolution are possible, giving a high frequency of power strokes relative to shaft speed.<sup>[2][7][8][1]</sup>
-  </p>
-  <p>
-    One patented rotary vane engine design claims that with two vanes per rotor, four working cycles per revolution are achieved, making it equivalent in indicated cycles to an eight‑piston four‑stroke engine of similar displacement. Other concepts use four intersecting vanes or multiple rotors to further increase the number of expansion events per revolution, aiming for higher specific power and smoother torque delivery. These architectures share the common feature that all principal moving elements rotate about fixed axes, which can reduce vibration compared with reciprocating pistons.<sup>[5][8][9][1][2][3]</sup>
-  </p>
-
-  <h2>Claimed advantages over piston engines</h2>
-  <p>
-    Proponents of rotary vane engines cite several theoretical and experimental advantages compared with conventional automotive piston engines.
-  </p>
-  <ul>
-    <li>
-      <strong>Power density and compactness:</strong> The high number of combustion events per revolution, combined with a compact circular housing, can yield high power‑to‑weight and power‑to‑volume ratios for a given displacement. This is attractive for applications where packaging space is limited, such as sports cars, drones or hybrid range extenders.<sup>[4][7][1][2]</sup>
-    </li>
-    <li>
-      <strong>Mechanical simplicity and friction reduction:</strong> The absence of a slider‑crank mechanism, connecting rods, and a conventional valvetrain reduces part count and can lower mechanical and pumping losses, potentially increasing brake thermal efficiency. Fewer parts also imply lower manufacturing and maintenance costs at scale, although this remains to be proven in mass production.<sup>[2][3][5]</sup>
-    </li>
-    <li>
-      <strong>Smoothness and NVH:</strong> Because the main moving components rotate continuously and are better balanced, rotary vane engines can exhibit low vibration and noise levels, sometimes compared qualitatively to an electric motor. This improved refinement is desirable in passenger car applications, where vibration and harshness are key design constraints.<sup>[7][3]</sup>
-    </li>
-  </ul>
-  <p>
-    Some rotary vane concepts also emphasize flexible operation on different fuels (e.g. gasoline, LPG, natural gas) and the possibility of integrating with pneumatic or thermodynamic systems. A hybrid pneumatic‑combustion rotary vane engine has been demonstrated where the machine can operate both as an internal combustion engine and as a compressed‑air motor, suggesting potential synergy with energy recovery or gas‑distribution infrastructure.<sup>[10][4]</sup>
-  </p>
-
-  <h2>Limitations and engineering challenges</h2>
-  <p>
-    Despite these potential benefits, several technical challenges currently limit the use of rotary vane engines as direct replacements for piston engines in cars.
-  </p>
-  <ul>
-    <li>
-      <strong>Sealing and wear:</strong> Maintaining tight seals between vane tips and the housing, and between adjacent chambers, under high temperature and pressure is difficult. Poor sealing causes blow‑by, loss of efficiency, and increased emissions, while high contact loads on the vanes can accelerate wear. Ensuring adequate lubrication without excessive oil consumption is also challenging, as seen historically with other rotary engines.<sup>[11][6][2]</sup>
-    </li>
-    <li>
-      <strong>Thermal management and materials:</strong> Vane tips and housing surfaces are exposed continuously to hot combustion gases, creating non‑uniform thermal loads and potential distortion of components. Thermal expansion can degrade clearances and sealing, demanding tight machining tolerances and advanced materials or coatings, which increase cost and manufacturing complexity.<sup>[8][9][2]</sup>
-    </li>
-    <li>
-      <strong>Combustion control and emissions:</strong> Achieving homogeneous combustion, stable ignition, and low emissions across the full speed–load range of an automotive drive cycle is non‑trivial in the constrained geometry of vane chambers. Experimental rotary vane prototypes have reported issues such as misfiring and cold‑start problems, especially when optimized for gaseous fuels. Meeting modern automotive emission regulations would require sophisticated fuel injection, ignition control, and exhaust after‑treatment systems comparable to those used on advanced piston engines.<sup>[12][4][2]</sup>
-    </li>
-  </ul>
-  <p>
-    In addition, rotary vane engines lack the long production history and optimization effort invested in piston engines, so their actual real‑world reliability, durability, and cost in automotive service remain largely unproven. Automotive manufacturers are conservative in adopting entirely new engine architectures because of the high cost of validation and the simultaneous shift of investment toward electrified powertrains.<sup>[6][3][12]</sup>
-  </p>
-
-  <h2>Current state and automotive potential</h2
-
-  <!-- Word Count Display -->
-  <div id="wordCount">Word Count: <span id="count">0</span></div>
-  
-  <!-- Word Count JavaScript -->
-  <script>
-    function updateWordCount() {
-      // Get all text content from the body, excluding script and style tags
-      let body = document.getElementById('mainBody');
-      let clone = body.cloneNode(true);
-      
-      // Remove script and style elements from clone
-      let scripts = clone.getElementsByTagName('script');
-      let styles = clone.getElementsByTagName('style');
-      
-      while(scripts.length > 0) {
-        scripts[0].parentNode.removeChild(scripts[0]);
-      }
-      while(styles.length > 0) {
-        styles[0].parentNode.removeChild(styles[0]);
-      }
-      
-      // Get text content
-      let text = clone.textContent || clone.innerText;
-      
-      // Remove extra whitespace and split into words
-      text = text.replace(/\s+/g, ' ').trim();
-      let words = text.split(' ').filter(word => word.length > 0);
-      
-      // Update the count display
-      document.getElementById('count').textContent = words.length;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotary Vane Internal Combustion Engines</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222222;
+      margin: 0;
+      padding: 0;
     }
-    
-    // Update word count when page loads
-    window.addEventListener('load', updateWordCount);
-    
-    // Update word count if content changes (for dynamic content)
-    if (window.MutationObserver) {
-      const observer = new MutationObserver(updateWordCount);
-      observer.observe(document.getElementById('mainBody'), {
-        childList: true,
-        subtree: true,
-        characterData: true
-      });
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 16px;
+      text-align: center;
     }
-    
-    // Initial update
-    updateWordCount();
-  </script>
-  
-</body>
-</html>
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #003366;
+      margin-top: 18px;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+
+    sup {
+      font-size: 10px;
+    }
+
+    a {
+      color: #00509e;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .references {
+      margin-top: 10px;
+    }
+
+    .references li {
+      font-size: 14px;
+    }
+
+    footer {
+      max-width: 900px;
+      margin: 10px auto 20px;
+      font-size: 14px;
+      color: #555555;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rotary Vane Internal Combustion Engines</h1>
+    <p>Foundation Year Engineering Project</p>
+  </header>
+
+  <main id="page-content">
+    <p>
+      Rotary vane internal combustion engines are a promising but still experimental alternative to conventional piston engines for cars, offering potential benefits in compactness, smoothness, and efficiency but facing significant engineering challenges in sealing, durability, emissions, and commercialization. Current research and patents show that while rotary vane concepts can in principle replace piston engines in some automotive roles, further development and validation are needed before they become practical replacements in mass‑market vehicles.<sup>[1][2][3][4]</sup>
+    </p>
+
+    <h2>Introduction</h2>
+    <p>
+      Conventional automotive powertrains are dominated by four‑stroke reciprocating piston engines, which convert chemical energy in fuel into mechanical work through repetitive up‑and‑down motion of pistons linked to a crankshaft. This mechanism is mature and robust but involves many moving parts, friction losses in the slider‑crank and valvetrain, and vibration due to reciprocating masses. Rotary vane engines attempt to address these limitations by using rotating vanes in a cylindrical housing to generate torque directly, removing the slider‑crank mechanism and potentially simplifying the engine.<sup>[3][5][6][1]</sup>
+    </p>
+
+    <h2>Operating principle</h2>
+    <p>
+      A rotary vane internal combustion engine typically consists of a circular or cylindrical housing, a rotor carrying multiple sliding vanes, and ports for intake and exhaust. As the rotor turns, the vanes slide radially to maintain contact with the housing, forming variable‑volume chambers where the four thermodynamic strokes—intake, compression, combustion/expansion and exhaust—occur in sequence around the circumference. Because several chambers can be in different phases simultaneously, multiple combustion events per revolution are possible, giving a high frequency of power strokes relative to shaft speed.<sup>[2][7][8][1]</sup>
+    </p>
+    <p>
+      One patented rotary vane engine design claims that with two vanes per rotor, four working cycles per revolution are achieved, making it equivalent in indicated cycles to an eight‑piston four‑stroke engine of similar displacement. Other concepts use four intersecting vanes or multiple rotors to further increase the number of expansion events per revolution, aiming for higher specific power and smoother torque delivery. These architectures share the common feature that all principal moving elements rotate about fixed axes, which can reduce vibration compared with reciprocating pistons.<sup>[5][8][9][1][2][3]</sup>
+    </p>
+
+    <h2>Claimed advantages</h2>
+    <p>Proponents of rotary vane engines cite several advantages compared with conventional automotive piston engines.</p>
+    <ul>
+      <li>
+        <strong>Power density and compactness:</strong> The high number of combustion events per revolution, combined with a compact circular housing, can yield high power‑to‑weight and power‑to‑volume ratios for a given displacement, which is attractive where packaging space is limited, such as sports cars, drones or hybrid range extenders.<sup>[4][7][1][2]</sup>
+      </li>
+      <li>
+        <strong>Mechanical simplicity and friction reduction:</strong> The absence of a slider‑crank mechanism, connecting rods and a conventional valvetrain reduces part count and can lower mechanical and pumping losses, potentially increasing brake thermal efficiency.<sup>[2][3][5]</sup>
+      </li>
+      <li>
+        <strong>Smoothness and NVH:</strong> Because the main moving
