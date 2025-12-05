@@ -176,7 +176,17 @@
     function updateWordCount() {
       const content = document.getElementById("page-content");
       const text = content.innerText || content.textContent;
-      // Split on whitespace and filter out empty items
-      const words = text.trim().split(/\s+/).filter(function (w) { return w.length > 0; });
-      document.getElementById("word
+
+      // Split on whitespace and filter out empty strings
+      const words = text.trim().split(/\s+/).filter(function (w) {
+        return w.length > 0;
+      });
+
+      const countSpan = document.getElementById("word-count");
+      countSpan.textContent = "Word count: " + words.length;
+    }
+
+    // Run once when the page has loaded
+    document.addEventListener("DOMContentLoaded", updateWordCount);
+  </script>
 
