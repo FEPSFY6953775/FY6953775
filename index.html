@@ -124,7 +124,7 @@
     <p id = "advantagesText">
       Researchers of rotary vane engines cite many theoretical and experimental advantages compared to conventional piston engines such as an increased power to weight ratio, friction reduction and increased smoothness of torque delivery.</p>
     <ul>
-      <li>
+      <li id = "advantagesText3">
         <strong>Power density and compactness:</strong> The high number of combustion reactions per revolution, combined with a compact circular housing, can generate high power to weight and power to volume ratios for a given displacement. This is beneficial as the engines will take up less space allowing more room for other technologies or making cars lighter and further increasing efficiency as well as increasing the power provided to the crankshaft and smoother torque delivery. <sup>[4][7][1][2]</sup>
       </li>
       <li>
@@ -261,12 +261,13 @@
     const principalText = displayWordCount("principalText");
     const advantagesText = displayWordCount("advantagesText");
     const advantagesText2 = displayWordCount("advantagesText2");
+    const advantagesText3 = displayWordCount("advantagesText3");
     const challengesText = displayWordCount("challengesText");
     const challengesText2 = displayWordCount("challengesText2");
     const stateText = displayWordCount("stateText");
     const stateText2 = displayWordCount("stateText2");
     // Calculate the sum of all selected sections
-    const totalWordCount = introductionText + principalText + advantagesText + advantagesText2 + challengesText + challengesText2 + stateText + stateText2;
+    const totalWordCount = introductionText + principalText + advantagesText + advantagesText2 + advantagesText3 + challengesText + challengesText2 + stateText + stateText2;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
