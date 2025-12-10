@@ -141,7 +141,7 @@
     <h2>Limitations and challenges</h2>
     <p id = "challengesText">
       Despite all of these potential advantages there are still many potential engineering issues with current designs that make vane engines difficult to make commercially viable at the moment such as sealing issues, material distortion and combustion control. These limitations are also creating a reluctance for more companies to invest time and money into researching these engines, slowing their development and reducing the incentive to adopt them.</p>
-    <ul>
+    <ul id = "challengesText3">
       <li>
         <strong>Sealing and wear:</strong> Maintaining a tight enough seal between the vane tips and the housingand between adjacent chambers, under high temperature and pressure is difficult. Poor sealing results in blow by (gases escaping to different chambers), loss of efficiencyand increased emissions, whilst if the seal is too tight, loads on the vanes can increase wear. Other types of rotary engines have also been historically poor with oil comsumption as large amounts must be injected directly into the combustion chambers to lubricate the vanes agaisnt the outer housing which is required to prevent excessive wear of parts. <sup>[10][6][2]</sup>
       </li>
@@ -264,10 +264,11 @@
     const advantagesText3 = displayWordCount("advantagesText3");
     const challengesText = displayWordCount("challengesText");
     const challengesText2 = displayWordCount("challengesText2");
+    const challengesText3 = displayWordCount("challengesText3");
     const stateText = displayWordCount("stateText");
     const stateText2 = displayWordCount("stateText2");
     // Calculate the sum of all selected sections
-    const totalWordCount = introductionText + principalText + advantagesText + advantagesText2 + advantagesText3 + challengesText + challengesText2 + stateText + stateText2;
+    const totalWordCount = introductionText + principalText + advantagesText + advantagesText2 + advantagesText3 + challengesText + challengesText2 + challengesText3 + stateText + stateText2;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
